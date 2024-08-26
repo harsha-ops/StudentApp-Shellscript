@@ -88,7 +88,7 @@ echo "[Unit]
         WantedBy=multi-user.target" > /etc/systemd/system/tomcat.service
 
 systemctl daemon-reload
-systemctl restart tomcat
+systemctl start tomcat
 systemctl enable tomcat
 
 
