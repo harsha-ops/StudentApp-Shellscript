@@ -44,7 +44,7 @@ echo 2 | sudo alternatives --config java
 
 cd /opt/student-app/
 
-mvn clean
+mvn clean package
 
 #Setting the java path to java1.11 as per the tomcat
 
