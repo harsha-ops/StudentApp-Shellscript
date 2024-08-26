@@ -46,7 +46,9 @@ echo 2 | sudo alternatives --config java
 
 #Building the application using maven
 
-cd /opt/student-app/ && mvn clean package
+cd /opt/student-app/
+
+mvn clean package
 
 #Setting the java path to java1.11 as per the tomcat
 
