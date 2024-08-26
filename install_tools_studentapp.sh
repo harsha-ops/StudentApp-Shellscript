@@ -87,9 +87,9 @@ echo "[Unit]
         [Install]
         WantedBy=multi-user.target" > /etc/systemd/system/tomcat.service
 
-systemctl daemon-reload
-systemctl start tomcat
-systemctl enable tomcat
+sudo systemctl daemon-reload
+sudo systemctl start tomcat
+sudo systemctl enable tomcat
 
 
 # Nginx Setup
