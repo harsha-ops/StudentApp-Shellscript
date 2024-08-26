@@ -36,19 +36,15 @@ cp /opt/student-app/tomcat/conf/context.xml /opt/appserver/conf/
 
 sudo systemctl restart tomcat
 
-#Deploying studentapp
-
-cd /opt/student-app/
-
 #Setting the java path to java1.8 to build the application
 
 echo 2 | sudo alternatives --config java
 
-#Building the application using maven
+#Building the application using Maven
 
 cd /opt/student-app/
 
-mvn clean package
+mvn clean
 
 #Setting the java path to java1.11 as per the tomcat
 
