@@ -29,7 +29,7 @@ sudo systemctl restart tomcat
 
 sudo rm -rf /usr/share/nginx/html/*
 
-sudo su devops -c "cp -R /opt/static-project/iPortfolio/* /usr/share/nginx/html/"
+sudo "cp -R /opt/static-project/iPortfolio/* /usr/share/nginx/html/"
 
 # Reverse proxy config
 
