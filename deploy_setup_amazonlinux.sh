@@ -18,6 +18,10 @@ sudo su devops -c "cp ./tomcat/lib/mysql-connector.jar /opt/appserver/lib/"
 
 sudo su devops -c "cp ./tomcat/conf/context.xml /opt/appserver/conf/"
 
+#Deploying the build artifact to the tomcat webapps folder
+
+sudo su devops -c "cp /opt/student-app/target/*.war /opt/appserver/webapps/student.war"
+
 sudo systemctl restart tomcat
 
 
