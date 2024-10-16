@@ -96,7 +96,7 @@ sudo systemctl enable tomcat
 
 # Nginx Setup
 
-sudo amazon-linux-extras install nginx -y
+sudo amazon-linux-extras install nginx1 -y
 systemctl start nginx
 systemctl enable nginx
 
