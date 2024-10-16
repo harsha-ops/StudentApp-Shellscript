@@ -12,7 +12,7 @@ sudo su devops -c "cp ./tomcat/conf/tomcat-users.xml /opt/appserver/conf/"
 
 # Loading db driver to the tomcat to integrate with db
 
-sudo su devops -c cp "./tomcat/lib/mysql-connector.jar /opt/appserver/lib/"
+sudo su devops -c "cp ./tomcat/lib/mysql-connector.jar /opt/appserver/lib/"
 
 # Integrating tomcat with db
 
