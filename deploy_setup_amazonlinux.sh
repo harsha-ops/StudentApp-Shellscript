@@ -4,19 +4,19 @@ sudo setsebool -P httpd_can_network_connect 1
 
 # Modifying the managers context.xml file to access the managers application in tomcat
 
-cp ./tomcat/manager/context.xml /opt/appserver/webapps/manager/META-INF/
+sudo su devops -c "cp ./tomcat/manager/context.xml /opt/appserver/webapps/manager/META-INF/"
 
 # Adding user to the tomcat
 
-cp ./tomcat/conf/tomcat-users.xml /opt/appserver/conf/
+sudo su devops -c "cp ./tomcat/conf/tomcat-users.xml /opt/appserver/conf/"
 
 # Loading db driver to the tomcat to integrate with db
 
-cp ./tomcat/lib/mysql-connector.jar /opt/appserver/lib/
+sudo su devops -c cp "./tomcat/lib/mysql-connector.jar /opt/appserver/lib/"
 
 # Integrating tomcat with db
 
-cp ./tomcat/conf/context.xml /opt/appserver/conf/
+sudo su devops -c "cp ./tomcat/conf/context.xml /opt/appserver/conf/"
 
 sudo systemctl restart tomcat
 
