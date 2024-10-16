@@ -27,12 +27,12 @@ sudo systemctl restart tomcat
 
 # Deploying static application
 
-# sudo rm -rf /usr/share/nginx/html/*
+sudo rm -rf /usr/share/nginx/html/*
 
-# sudo cp -R /opt/static-project/iPortfolio/* /usr/share/nginx/html/
+sudo su devops -c "cp -R /opt/static-project/iPortfolio/* /usr/share/nginx/html/"
 
 # Reverse proxy config
 
-# sudo cp /opt/student-app/nginx/nginx.conf /etc/nginx/
+sudo cp ./nginx/nginx.conf /etc/nginx/
 
-# sudo systemctl restart nginx
+sudo systemctl restart nginx
