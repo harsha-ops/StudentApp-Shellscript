@@ -96,13 +96,13 @@ sudo systemctl enable tomcat
 
 # Nginx Setup
 
-sudo yum install nginx -y
+sudo amazon-linux-extras install nginx -y
 systemctl start nginx
 systemctl enable nginx
 
 # mariadb setup
 
-sudo yum install mariadb105-server.x86_64 -y
+sudo yum install mariadb-server.x86_64 -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 
