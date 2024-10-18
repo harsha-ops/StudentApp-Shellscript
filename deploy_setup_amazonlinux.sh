@@ -1,6 +1,6 @@
 sudo setsebool -P httpd_can_network_connect 1
 
-# mysql -uroot < ./dbscript/studentapp.sql
+sudo mysql -uroot < ./dbscript/studentapp.sql
 
 # Modifying the managers context.xml file to access the managers application in tomcat
 
@@ -29,7 +29,7 @@ sudo systemctl restart tomcat
 
 sudo rm -rf /usr/share/nginx/html/*
 
-sudo "cp -R /opt/static-project/iPortfolio/* /usr/share/nginx/html/"
+sudo cp -R /opt/static-project/iPortfolio/* /usr/share/nginx/html/
 
 # Reverse proxy config
 
